@@ -1,0 +1,8 @@
+body {
+  height: 100vh;
+}
+
+#logo-mobile {
+  width: 70px;
+  height: auto;
+}
