@@ -18,8 +18,18 @@
         <a class="navbar-brand">
           <img id="logo-mobile" src="img/mobile-logo.png" alt="Logo">
         </a>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex flex-grow-1" role="search">
+          <div class="input-group mb-3">
+            <span class="input-group-text">
+              <a href="#">
+                <i class="fa-solid fa-dragon"></i>
+              </a>
+            </span>
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+              <label for="floatingInputGroup1">Prova a cercare: Lezioni di Laravel</label>
+            </div>
+          </div>
           <button class="btn" type="submit">
             <i class="fa-solid fa-dragon text-warning"></i>
           </button>
@@ -33,3 +43,9 @@
 </html>
 
 <!-- <i class="fa-solid fa-dragon"></i> -->
+
+<!--
+      TO DO LIST:
+
+          cambiare colore all'icona dentro la search bar
+-->
