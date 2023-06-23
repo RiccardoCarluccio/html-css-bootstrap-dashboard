@@ -5,3 +5,12 @@
 .my-bg-sidebar {
   background-color: rgba(5,30,52,255);
 }
+
+.my-bg-overview {
+  background-color: rgba(27,114,232,255);
+}
+
+/* COLORI BADGE OVERVIEW SECTION */
+.my-badge-overview {
+  background-color: rgba(22,91,186,255);
+}
