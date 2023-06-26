@@ -1,4 +1,18 @@
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 #logo-mobile {
   width: 70px;
+  height: auto;
+}
+
+.my-bg-sidebar {
+  height: calc(100vh - 96px);
+}
+
+#table-icon {
+  width: 25px;
   height: auto;
 }

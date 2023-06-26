@@ -43,18 +43,18 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-2 d-flex flex-column justify-content-between my-bg-sidebar">
-          <div class="d-flex flex-column text-white align-items-center fs-4">
+          <div class="d-flex flex-column text-white align-items-center fs-4 pt-3 gap-3">
             <i class="fa-solid fa-dragon"></i>    <!-- SIDEBAR -->
             <i class="fa-solid fa-dragon"></i>
             <i class="fa-solid fa-dragon"></i>
           </div>
-          <div class="text-white m-auto fs-4">
+          <div class="d-flex flex-column text-white align-items-center fs-4 pb-3">
             <i class="fa-solid fa-dragon"></i>
           </div>
         </div>
 
         <div class="col-10">    <!-- MACRO SEZIONE DESTRA -->
-          <div class="row flex-column text-white my-bg-overview py-4">   <!-- SEZIONE OVERVIEW -->
+          <div class="row flex-column text-white my-bg-overview py-4 row-gap-3">   <!-- SEZIONE OVERVIEW -->
             <div class="col order-sm-1">
               <span>Nuovo Studente</span>
               <button class="btn btn-outline-light">
@@ -91,7 +91,37 @@
           </div>
 
           <div class="row">   <!-- CONTENUTO PRINCIPALE -->
-            
+            <div class="col py-3">
+              <div class="card">
+                <div class="card-header">
+                  Prossime classi
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="col">Nome</th>
+                      <th class="col d-none d-md-inline-block">Data inizio</th>
+                      <th class="col d-none d-md-inline-block">ROI</th>
+                      <th class="col">Stato</th>
+                      <th class="col">Azioni</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <img id="table-icon" src="img/class-avatar.jpg">
+                        Classe 75</th>
+                      <td class="d-none d-md-inline-block">15 Feb 2021</td>
+                      <td class="d-none d-md-inline-block">20%</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
+                      <td><i class="fa-solid fa-dragon"></i>
+                        <i class="fa-solid fa-dragon"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,10 +137,10 @@
       TO DO LIST:
 
         importanti:
-          allungare la sidebar al 100% del container senza scrollbar;
           capire perchè il testo centrale della search-bar esce fuori dai bordi;
           capire perchè al ridimensionamento verso il piccolo, la search-bar va a capo;
         meno importanti:
+          aggiungere padding orizzontale alla table
           font-size elementi "overview section";
           fixare allineamento verticale dei badge-pill;
           cambiare colore all'icona dentro la search bar;
